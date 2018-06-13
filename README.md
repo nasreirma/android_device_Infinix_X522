@@ -8,6 +8,8 @@ This branch is device for building of the LineageOS 14.1 and Android Nougat 7.1.
 # About Device
 
 Infinix S2 (X522)
+
+
 ![Infinix S2](https://www.jbklutse.com/wp-content/uploads/2017/04/infinix-s2-pro-2.jpg )
 
 ### Specifications
