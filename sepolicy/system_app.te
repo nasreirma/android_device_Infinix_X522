@@ -272,3 +272,8 @@ allow system_app cache_recovery_file:file { read write create open getattr unlin
 # Purpose : Allow system app to create a dir in sdcard
 allow system_app vfat:dir create;
 
+# Sunwave FP
+allow system_app sunwave_device:chr_file {open read write ioctl}; 
+allow system_app fpserver:binder call;  
+allow system_app system_server_service:service_manager {add};
+
