@@ -147,3 +147,5 @@ allow shell mtkrildmd2_exec:file rx_file_perms;
 allow shell memsicd3524x_exec:file rx_file_perms;
 #add end
 
+# Sunwave FP
+allow shell sunwave_device:chr_file {open read write ioctl};

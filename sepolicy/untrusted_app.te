@@ -133,3 +133,6 @@ allow untrusted_app embms_library_file:file {read getattr open};
 # Operator: New feature for eMBMS middleware integration
 # Purpose: allow vendor's eMBMS middleware APK to send AT-command via embmsd local socket
 unix_socket_connect(untrusted_app, rild_embms, rilproxy)
+
+# Sunwave FP
+allow untrusted_app sunwave_device:chr_file {open read write ioctl};  

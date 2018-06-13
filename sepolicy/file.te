@@ -299,3 +299,6 @@ type rild_embms_socket, file_type, mlstrustedobject;
 
 # eMBMS VzW SDK file
 type embms_library_file, file_type, data_file_type;
+
+# Sunwave FP
+type sunwave_data_file, file_type, data_file_type;
