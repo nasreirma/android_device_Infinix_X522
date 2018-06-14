@@ -1279,3 +1279,16 @@ service mediacodec /system/bin/mediacodec
     user mediacodec
     group media system audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm sdcard_r media_rw sdcard_rw
     ioprio rt 4
+
+	
+#sunwave fingerprint
+
+service fp /system/bin/fpserver
+    class main
+    user root
+
+service fingerprintd /system/bin/fingerprintd
+    class late_start
+    user system	
+	
+#sunwave fingerprint

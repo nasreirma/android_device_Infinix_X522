@@ -638,3 +638,8 @@
 /dev/block/platform/mtk-msdc\.0/[0-9]+\.msdc0/by-name/system            u:object_r:system_block_device:s0
 /dev/block/platform/mtk-msdc\.0/[0-9]+\.msdc0/by-name/metadata          u:object_r:metadata_block_device:s0
 
+
+#sunwave fingerprint
+/dev/sunwave_fp        u:object_r:sunwave_device:s0
+/system/bin/fpserver  u:object_r:fpserver_exec:s0
+#sunwave fingerprint
