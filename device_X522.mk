@@ -117,6 +117,11 @@ PRODUCT_PACKAGES += \
     libion \
     fingerprintd
 
+# MTK apps
+PRODUCT_PACKAGES += \
+    YGPS \
+    EngineerMode
+
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio \
@@ -130,6 +135,12 @@ PRODUCT_PACKAGES += \
 # CM14 mtk symbols
 PRODUCT_PACKAGES += \
     mtk_symbols \
+
+PRODUCT_PACKAGES += \
+    YahooWeatherProvider \
+    KernelAdiutor \
+    Jelly \
+    cmactions
 
 # Power
 PRODUCT_PACKAGES += \
@@ -175,3 +186,14 @@ PRODUCT_SYSTEM_SERVER_JARS += com.cyanogenmod.keyhandler
 
 # Never dexopt the keyhandler
 $(call add-product-dex-preopt-module-config,com.cyanogenmod.keyhandler,disable)
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=H539
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_MODEL="Infinix S2"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_BRAND=Infinix
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_DEVICE=Infinix-X522
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Infinix/H539/Infinix-X522:7.0/NRD90M/X522-H539A1-N-170411V68:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="full_rlk6753_65_n-user 7.0 NRD90M 1491852524 release-keys"
+
+# Superuser
+# WITH_SU := true
+# WITH_ROOT_METHOD := magisk

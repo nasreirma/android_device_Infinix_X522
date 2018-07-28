@@ -9,7 +9,9 @@ $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 USE_NINJA := true
 
 # Architecture
-# FORCE_32_BIT := true
+#FORCE_32_BIT := false
+BLOCK_BASED_OTA := true
+TARGET_FORCE_DEXPREOPT := false
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6753
@@ -95,6 +97,11 @@ BOARD_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 #BOARD_GLOBAL_CFLAGS += -DMTK_HARDWARE
 #BOARD_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 
+ifeq ($(TARGET_FORCE_DEXPREOPT),true)
+  WITH_DEXPREOPT := true
+else
+  WITH_DEXPREOPT := false
+endif
 
 # Display
 BOARD_EGL_CFG := /vendor/Infinix/X522/vendor/lib/egl/egl.cfg

@@ -11,6 +11,7 @@ LOCAL_SRC_FILES := \
     icu55.c \
     mtk_asc.cpp \
     mtk_audio.cpp \
+	mtk_cam.cpp \
     mtk_fence.cpp \
     mtk_omx.cpp \
     mtk_ui.cpp

@@ -48,10 +48,6 @@ ro.boot.selinux=disable
 debug.hwui.render_dirty_regions=false
 ro.hardware.egl=mali
 
-# performance
-#ro.mtk_perf_simple_start_win=1
-#ro.mtk_perf_fast_start_win=1
-#ro.mtk_perf_response_time=1
 
 ro.mediatek.chip_ver=S01
 ro.mediatek.version.release=alps-mp-n1.mp1-V1_rlk6753.65.n
@@ -64,17 +60,24 @@ persist.mtk.wcn.dynamic.dump=0
 service.wcn.driver.ready=no
 ro.sf.hwrotation=0
 persist.sys.scrollingcache=2
-#touch.size.calibration=geometric
-#touch.size.scale=100
-#touch.pressure.calibration=amplitude
-#touch.pressure.scale=0.1
-
-# temporary disables NAV bar (soft keys)
 qemu.hw.mainkeys=1
+
+#add by NasreIrma for fingerprint start
+persist.fingerprint = microarray
+persist.sys.sw.key.mod=0
+persist.sys.sw.enroll.double=100
+persist.sys.sw.verify.retry=5
+persist.sys.sw.idh.nums=1
+persist.sys.sw.msg.base=1100
+persist.sys.sw.enroll.percent=1
+persist.sys.sw.enroll.frm.num=14
+persist.sys.sw.transsion.f14=1
+#add by NasreIrma for fingerprint end
 
 mediatek.wlan.chip=CONSYS_MT6735
 mediatek.wlan.module.postfix=_consys_mt6735
-##
+# Enablele timezone / thanks to DAM )
+persist.sys.timezone=Africa/Casablanca
 
 ro.mtk_gps_support=1
 persist.mtk.combo.coredump=no

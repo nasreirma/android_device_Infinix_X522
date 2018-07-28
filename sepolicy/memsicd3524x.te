@@ -20,8 +20,8 @@ allow memsicd3524x msensor_device:chr_file { open ioctl read write };
 allow memsicd3524x gsensor_device:chr_file { open ioctl read write };
 allow memsicd3524x input_device:dir { search open read write };
 allow memsicd3524x input_device:file { open read };
-allow memsicd3524x memsicd3524x_access_file1:file { open read write };
-allow memsicd3524x memsicd3524x_access_file2:file { open read write};
+#allow memsicd3524x memsicd3524x_access_file1:file { open read write };
+#allow memsicd3524x memsicd3524x_access_file2:file { open read write};
 # Operate data partation directly, need modify later,e.g. use "data/misc/sensor".
 # for msensor daemon access "data/misc".
 file_type_auto_trans(memsicd3524x, system_data_file, msensor_data_file)

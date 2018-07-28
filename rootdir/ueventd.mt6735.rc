@@ -114,3 +114,12 @@
 
 #MTK In-House TEE
 /dev/ttyACM0              0660   radio      radio
+
+# fingerprint ma120n
+/dev/madev0               0777   system     system
+
+# fingerprint goodix
+/dev/goodix_fp               0666   system     system
+
+# fingerprint sunwave
+/dev/sunwave_fp               0666   system     system

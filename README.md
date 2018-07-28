@@ -63,3 +63,7 @@ Front Camera | 5MP, Int. 5MP (OmniVision ov5695)
 ## To be checked
  * Enforcing SELinux
 
+Credits :
+
+Hyperion70
+Izaq Kull

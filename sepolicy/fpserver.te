@@ -18,6 +18,8 @@ r_dir_file(fpserver, sunwave_data_file)
 allow fpserver sunwave_data_file:dir ra_dir_perms;
 allow fpserver sunwave_data_file:file create_file_perms;
 allow fpserver sunwave_device:chr_file { open read write ioctl rw_file_perms};
+allow fpserver fpserver_data_file:dir ra_dir_perms;
+allow fpserver fpserver_data_file:file create_file_perms;
 #allow fpserver system_data_file:dir create_dir_perms;
 #allow fpserver system_data_file:file create_file_perms;
 allow fpserver system_file:file {read open execute_no_trans execute};
@@ -34,7 +36,7 @@ allow fpserver fpserver:netlink_kobject_uevent_socket { create setopt bind write
 allow fpserver ueventd:dir search;  allow fpserver ueventd:file { create write read open };
 allow fpserver block_device:dir { search };
 #allow fpserver mmcblk_device:blk_file { open read write rw_file_perms};
-allow fpserver mmc_device:blk_file { open read write rw_file_perms};
+#allow fpserver mmc_device:blk_file { open read write rw_file_perms};
 allow fpserver untrusted_app:process { signull };
 #allow fpserver system_data_file:file { write open create setattr };
 #allow fpserver system_data_file:dir { write open add_name create setattr };
