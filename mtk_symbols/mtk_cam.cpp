@@ -10,5 +10,7 @@
 extern "C" {
 void _ZNK7android16CameraParameters22getPreviewCallBackSizeEPiS1_ () {
     }
+void _ZN7android16CameraParameters20KEY_APP_PACKAGE_NAMEE () {
+	}
 }
 

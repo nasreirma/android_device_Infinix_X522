@@ -64,7 +64,7 @@ qemu.hw.mainkeys=1
 
 #add by NasreIrma for fingerprint start
 persist.fingerprint = microarray
-persist.sys.sw.key.mod=0
+persist.sys.sw.key.mod=2
 persist.sys.sw.enroll.double=100
 persist.sys.sw.verify.retry=5
 persist.sys.sw.idh.nums=1
